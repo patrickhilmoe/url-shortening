@@ -1,0 +1,180 @@
+/* task is creating and learning CSS layout*/
+
+@font-face {
+  font-family: "Poppins";
+  src: url("https://fonts.google.com/specimen/Poppins");
+}
+
+div {
+  font-family: Poppins;
+}
+
+.btn {
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-size: 20px;
+}
+
+.btn-small {
+  padding: 8px 25px;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color:hsl(257, 7%, 63%);
+  color: white;
+}
+
+.btn-small:hover {
+  background-color:hsl(257, 7%, 63%);
+  color: white;
+}
+
+.navbar-nav li {
+  align-self: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 150px 1fr 1fr 150px;
+  grid-template-rows: repeat(4, fit-content(1fr));
+  background: hsl(0, 0%, 83%);
+}
+
+/* nav layout */
+
+/* .nav-layout {
+  display: grid;
+  grid-row:1;
+  grid-column: 2/3;
+  } */
+  
+  /* hero */
+  
+  .hero {
+    grid-row: 1;
+    grid-column:1/5;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    padding: 40px;
+  }
+  
+  .cont {
+    grid-column: 1/4;
+    justify-self: start;
+    align-self: center;
+  }
+
+  .cont-style {
+    width: 500px;
+    padding: 0px 0px 0px 100px
+  }
+  
+  .cont-style h2 {
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .img-cont {
+    grid-column: 4/5;
+  }
+  
+  .shorten {
+    grid-row:2/4; 
+    grid-column:2/4;
+
+  }
+
+  .url-shorten-form {
+    background: hsl(257, 27%, 26%) url(../images/bg-boost-desktop.svg) no-repeat;
+    padding: 50px;
+    display: flex;
+    border-radius: 10px;
+  }
+
+  .url-shorten-form input {
+    border-radius: 5px;
+    border: none;
+    flex: 1;
+    margin-right: 25px;
+
+  }
+
+.mid {
+  grid-row:4;
+  grid-column:2/4;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  text-align: center;
+  width: 500px;
+  padding: 50px;
+
+}
+
+.cards {
+  grid-row:5;
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: white;
+  font-size: 13px;
+  padding: 50px 15px 15px 15px;
+}
+
+.imagebg {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: solid black;
+}
+
+.bottom {
+  display: grid;
+  grid-row:6;
+  grid-column:1/5;
+  padding: 50px;
+  background: hsl(257, 27%, 26%) url(../images/bg-boost-desktop.svg) no-repeat;
+  color: white;
+}
+
+.bottom-style {
+  justify-self: center;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 50px;
+  grid-row:7;
+  grid-column:1/5;
+  display:grid;
+  grid-template-columns:3fr 1fr 1fr 1fr 1.5fr;
+}
+
+.footer .footname {
+  justify-self: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.footlist {
+  display: grid;
+  grid-template-rows: 4, 1fr;
+}
+
+.footlist .thick {
+  font-weight: bold;
+}
+
+.social > img {
+  padding: 5px;
+}
+
